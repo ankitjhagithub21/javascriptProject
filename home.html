@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        font: 3em sans-serif;
+        color: brown;
+    }
+  div{
+      background-color: yellow;
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+      margin: 0 auto;
+      padding: 100px;
+      box-sizing: border-box;
+  }
+  .name{
+    color: brown;
+    font:1em sans-serif;
+    font-style: italic;
+    font-size: 20px;
+   
+}
+  button{
+      margin: 50px 70px;
+      padding: 3%;
+      color: brown;
+      font-size: large;
+      background-color: lightblue;
+  }
+  #username
+  {
+      border: 1px solid red;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      font-size: medium;
+      color: blue;
+      padding-top: 4px;
+  }
+  #password{
+      border: 1px solid red;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      font-size: medium;
+      color:blue;
+      padding-top: 4px;
+  }
+</style>
+<body>
+    <center><h1>Welcome to Login Page</h1></center>
+    
+    <div>
+        <b class="name" >username:</b> <br>
+        <input type="text" name="text" id="username">
+        <br><br>
+
+        <b class="name">password:</b><br>
+        <input type="text" name="text" id="password">
+        <br><br>
+
+        <button onclick="login()"> <b>Submit</b> </button>
+
+    </div>
+
+    <script>
+        function login()
+        {
+            var uname=document.getElementById('username').value;
+            var pass=document.getElementById('password').value;
+
+            if(uname=="ankit" && pass=="123")
+            {
+                location.assign("file:///C:/Users/ANKIT%20KR%20JHA/Desktop/javaScript/page2.html");
+            }
+            else
+            {
+                window.alert("Login failed");
+            }
+        }
+    </script>
+</body>
+</html>
